@@ -9,7 +9,7 @@
                     </div>
                 </li>
                 <li class="c-date">
-                   <a href="<?php echo base_url(); ?>login"> <img src="<?php echo base_url(); ?>img/timekeeper-logo.png" width="20">&nbsp; Wed, Sept 16</a>
+                   <a href="<?php echo base_url(); ?>login"> <img src="<?php echo base_url(); ?>img/timekeeper-logo.png" width="20">&nbsp;</a>
                 </li>
                 <li id="l-user" class="logo dropdown  hidden-xs pull-right">
                     <a data-toggle="dropdown"  href="<?php echo base_url(); ?>login">Sebastian Michaelis <i class="md md-keyboard-arrow-down"></i></a>

@@ -8,7 +8,8 @@ $(document).ready(function(){
 	// 		window.location.href="#";
 	// 	}
 	// });
-	var month_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
+	
+	var month_arr = ['January','February','March','April','May','Jun','July','August','September','October','November','December'];
 	setInterval(function(){
 		var date = new Date();
 		var months = month_arr[date.getMonth()];
@@ -19,11 +20,11 @@ $(document).ready(function(){
 		var minutes = date.getMinutes();
 		var seconds = date.getSeconds();
 
-		var am_pm = 'am';
+		var am_pm = 'AM';
 		if(hours>12)
 		{
 			hours = hours-12;
-			am_pm = 'pm';
+			am_pm = 'PM';
 		}
 		if(hours<10)
 		{
@@ -38,7 +39,7 @@ $(document).ready(function(){
 			seconds = '0'+seconds;
 		}
 
-		var full_date = months+"/"+days+"/"+years+"&nbsp;"+hours+":"+minutes+":"+seconds+"&nbsp;"+am_pm;
+		var full_date = months+"&nbsp;"+days+"&nbsp;, "+years+"&nbsp;&nbsp;"+hours+"&nbsp;:&nbsp;"+minutes+"&nbsp;:&nbsp;"+seconds+"&nbsp;"+am_pm;
 
 		$('.c-date a').html(full_date);
 	},1000);
